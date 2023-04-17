@@ -1,10 +1,10 @@
 import React from 'react';
-import Rockets from './Rockets';
+import Statements from './Statements';
 
 function Home() {
   return (
     <main>
-      <Rockets />
+      <Statements />
     </main>
   );
 }
