@@ -10,6 +10,39 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
+/* ---------------------------------------NAVBAR----------------- */
+
+.search-wrapper {
+  width: 52.5%;
+}
+
+#search-form {
+  height: 42px;
+  border: 1px solid gray;
+  border-right: none;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  padding: 15px 16px;
+  width: 92%;
+}
+
+.search-label {
+  display: flex;
+}
+
+#search-button {
+  color: #333;
+  font-size: 1rem;
+  border: 1px solid gray;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  cursor: pointer;
+  width: 50px;
+  min-width: 50px;
+  height: 42px;
+}
+
+
 .list {
   width: 100%;
   display: grid;
