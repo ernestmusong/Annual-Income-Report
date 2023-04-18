@@ -1,15 +1,12 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
-import { getStockList, getStock } from 'redux/finance/financeSlice';
+import { getStock } from 'redux/finance/financeSlice';
 import Statement from './Statement';
 
 const Statements = () => {
   const dispatch = useDispatch();
-  const { stocks, isLoading, error } = useSelector((store) => store.finance);
+  const { data, isLoading, error } = useSelector((store) => store.finance);
 
-  useEffect(() => {
-    dispatch(getStockList());
-  }, [dispatch]);
   useEffect(() => {
     dispatch(getStock('AAN'));
   }, [dispatch]);
@@ -31,7 +28,7 @@ const Statements = () => {
 
   return (
     <ul className="list">
-      {stocks.map((item) => <Statement key={item.date} statement={item} />)}
+      {data.map((item) => <Statement key={item.id} item={item} />)}
     </ul>
   );
 };

@@ -1,20 +1,28 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { FaArrowAltCircleRight } from 'react-icons/fa';
 import { NavLink } from 'react-router-dom';
 
-function Statement({ statement }) {
+function Statement(props) {
+  const { item } = props;
+  console.log(props);
   return (
-    <NavLink>
-      <li className="statement">
-        <h3>{statement.symbol}</h3>
-        <p>{statement.date}</p>
-      </li>
-    </NavLink>
+    <li
+      className="item"
+    >
+      <NavLink to={`/statement/${item.id}`}>
+        <FaArrowAltCircleRight />
+      </NavLink>
+      <div>
+        <h3>Year</h3>
+        <p>{item.calendarYear}</p>
+      </div>
+    </li>
   );
 }
 
 Statement.propTypes = {
-  statement: PropTypes.oneOfType([PropTypes.object]).isRequired,
+  item: PropTypes.oneOfType([PropTypes.object]).isRequired,
 };
 
 export default Statement;
