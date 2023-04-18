@@ -5,7 +5,6 @@ import { NavLink } from 'react-router-dom';
 
 function Statement(props) {
   const { item } = props;
-  console.log(props);
   return (
     <li
       className="item"
