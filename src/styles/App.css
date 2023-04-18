@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
 *,
 html,
 body {
@@ -5,9 +7,10 @@ body {
   margin: 0;
   box-sizing: border-box;
   list-style-type: none;
+  font-family: 'Lato', sans-serif;
 }
 
-.shows-container {
+.list {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -15,26 +18,22 @@ body {
   grid-row-gap: 1.5rem;
 }
 
-.show {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  align-items: center;
-  width: 150px;
-  padding-top: 2px;
-  padding-bottom: 2px;
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+.list li:nth-child(odd) {
+  background: #ff6c73;
+}
+
+.list li:nth-child(even) {
+  background: #ff545b;
 }
 
 /* ------------------------------------------------------MEDIA LIBRARIES--------- */
 
 @media only screen and (min-width: 768px) {
-  .shows-container {
+  .list {
     grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
   }
 
-  .show {
+  .item {
     width: 325px;
   }
 }
