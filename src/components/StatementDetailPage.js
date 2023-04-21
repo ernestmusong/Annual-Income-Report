@@ -8,7 +8,12 @@ function StatementDetailPage() {
   const { data } = useSelector((state) => state.finance);
   const detail = data.find((item) => item.id === id);
 
-  return <StatementDetail detail={detail} />;
+  return (
+    <main data-testid="statement-detail-page">
+      <StatementDetail detail={detail} />
+      ;
+    </main>
+  );
 }
 
 export default StatementDetailPage;

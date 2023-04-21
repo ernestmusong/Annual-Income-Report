@@ -1,16 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Hero from './Hero';
 
 function StatementDetail({ detail }) {
   return (
     <>
-      <Hero
-        title1="Income Statement for"
-        title2={detail.calendarYear}
-      />
+      <div className="hero" data-testid="hero-container">
+        <div className="textWrap">
+          <h1>Income Statement for</h1>
+          <h2>{detail.calendarYear}</h2>
+        </div>
+      </div>
+
       <section className="list-section detailSection">
-        <h2>Income Statement</h2>
+        <h2>Income Statement Breakdown</h2>
         <table>
           <tbody className="tbody">
             <tr>

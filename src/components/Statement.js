@@ -5,9 +5,13 @@ import { NavLink } from 'react-router-dom';
 
 function Statement(props) {
   const { item } = props;
+  if (!item) {
+    return null;
+  }
   return (
     <li
       className="listItem"
+      data-testid="statement-container"
     >
       <NavLink to={`/statement/${item.id}`} className="itemLink">
         <div className="iconWrap">

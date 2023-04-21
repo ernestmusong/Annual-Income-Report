@@ -3,7 +3,7 @@ import Statements from './Statements';
 
 function Home() {
   return (
-    <main>
+    <main data-testid="home-container">
       <Statements />
     </main>
   );
