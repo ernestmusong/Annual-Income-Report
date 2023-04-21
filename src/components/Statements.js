@@ -2,13 +2,14 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
 import { getStock } from 'redux/finance/financeSlice';
 import Statement from './Statement';
+import Hero from './Hero';
 
 const Statements = () => {
   const dispatch = useDispatch();
   const { data, isLoading, error } = useSelector((store) => store.finance);
 
   useEffect(() => {
-    dispatch(getStock('AAN'));
+    dispatch(getStock('AAPL'));
   }, [dispatch]);
 
   if (isLoading) {
@@ -27,9 +28,18 @@ const Statements = () => {
   }
 
   return (
-    <ul className="list">
-      {data.map((item) => <Statement key={item.id} item={item} />)}
-    </ul>
+    <>
+      <Hero
+        title1="Income Statement Report for"
+        title2="Apple Inc."
+      />
+      <section className="list-section">
+        <h2>stats by year</h2>
+        <ul data-testid="statements" className="list">
+          {data.map((item) => <Statement key={item.id} item={item} />)}
+        </ul>
+      </section>
+    </>
   );
 };
 
