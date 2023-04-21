@@ -7,15 +7,17 @@ function Statement(props) {
   const { item } = props;
   return (
     <li
-      className="item"
+      className="listItem"
     >
-      <NavLink to={`/statement/${item.id}`}>
-        <FaArrowAltCircleRight />
+      <NavLink to={`/statement/${item.id}`} className="itemLink">
+        <div className="iconWrap">
+          <FaArrowAltCircleRight />
+        </div>
+        <div className="yearWrap">
+          <p>Year</p>
+          <h3>{item.calendarYear}</h3>
+        </div>
       </NavLink>
-      <div>
-        <h3>Year</h3>
-        <p>{item.calendarYear}</p>
-      </div>
     </li>
   );
 }
