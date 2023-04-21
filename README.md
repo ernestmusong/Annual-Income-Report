@@ -1,5 +1,5 @@
 <a name="readme-top"></a>
-  <h3><b>Metrics webapp</b></h3>
+  <h3><b>Annual Income Report</b></h3>
 
 # 📗 Table of Contents
 
@@ -22,9 +22,9 @@
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
-# 📖 [Bookstore] <a name="about-project"></a>
+# 📖 [Annual Income Report] <a name="about-project"></a>
 
-**[Bookstore]** is a project at <a href='https://www.microverse.org/'>Microverse</a> module three. A single page application that displays a list of books. A user can comment on a book add, edit and remove a book.
+**[Annual Income Report]** is a project at <a href='https://www.microverse.org/'>Microverse</a> module three.  It is a single page application that gives annual report on the income statements for the company "Apple Inc." for the past thirty-eight years (1985 till date)
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -33,19 +33,19 @@
   <summary>Client</summary>
   <ul>
     <li><a href="#">Reactjs</a></li>
+    <li><a href="#">Redux</a></li>
   </ul>
 </details>
 
 ### Key Features <a name="key-features"></a>
-- **[ Add book ]**
-- **[ Edit book ]**
-- **[ Delete book ]**
+- **[ Check income statement per year ]**
+- **[ Search income statement by year ]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://deploy-preview-6--musong-bookstore.netlify.app/)
+- [Live Demo Link](https://musong-annual-report.netlify.app/)
 
 ## 🚀 Project Presentation <a name="live-demo"></a>
 
