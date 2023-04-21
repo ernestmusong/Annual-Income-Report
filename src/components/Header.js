@@ -25,8 +25,8 @@ const Header = () => {
 
   return (
     <>
-      <nav className="navbar">
-        <div className="logo">
+      <nav className="navbar" data-testid="header-container">
+        <div className="logo" data-testid="logo">
           <NavLink to="/">
             <div className="iconWrap">
               <FaAngleLeft />

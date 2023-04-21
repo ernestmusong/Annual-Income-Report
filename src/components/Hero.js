@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 function Hero({ title1, title2 }) {
   return (
-    <div className="hero">
+    <div className="hero" data-testid="hero-container">
       <div className="textWrap">
         <h1>{title1}</h1>
         <h2>{title2}</h2>

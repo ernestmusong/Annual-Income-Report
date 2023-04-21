@@ -2,16 +2,17 @@ import React from 'react';
 import { Provider } from 'react-redux';
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import Home from '../components/Home';
 import store from '../redux/store';
+import Hero from '../components/Hero';
 
-describe('Home component', () => {
-  it('renders the Home component', () => {
+describe('Hero component', () => {
+  it('renders the Hero component', () => {
     render(
       <Provider store={store}>
-        <Home />
+        <Hero />
       </Provider>,
     );
-    expect(screen.getByTestId('home-container')).toBeInTheDocument();
+
+    expect(screen.getByTestId('hero-container')).toBeInTheDocument();
   });
 });
