@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+:root {
+  --dark-red: #ff545b;
+  --light-red: #ff6c73;
+  --dark-blue: #6a5acd;
+  --light-blue: #7b68ee;
+  --medium-purple: #9370db;
+}
+
 *,
 html,
 body {
@@ -5,49 +15,224 @@ body {
   margin: 0;
   box-sizing: border-box;
   list-style-type: none;
+  font-family: 'Lato', sans-serif;
 }
 
-/* ------------------------------------------------NAVBAR */
-img {
-  height: 50px;
-  width: 50px;
-}
-
-.logo-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-}
+/* ---------------------------------------NAVBAR----------------- */
 
 .navbar {
   display: flex;
-  justify-content: space-between;
-  padding: 2rem 3rem;
-  font-size: 20px;
-}
-
-hr {
-  margin: 0 3rem;
-}
-
-nav > ul {
-  display: flex;
-  justify-content: center;
   align-items: center;
-  gap: 1rem;
+  justify-content: space-between;
+  padding: 0.5rem;
+  background: var(--dark-blue);
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  height: 44px;
 }
 
-nav > ul a {
-  color: blue;
+.logo,
+.iconWrap,
+.settings {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.search-wrapper {
+  display: flex;
+  align-items: center;
+  width: 65%;
+  background: var(--medium-purple);
+  border-radius: 25px;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.search-label {
+  display: flex;
+  width: calc(100% - 50px);
+}
+
+.search-input {
+  border: none;
+  width: 100%;
+  background: transparent;
+  text-align: center;
+}
+
+.search-input::placeholder {
+  color: #fff;
+  font-size: 1rem;
+}
+
+.search-input:focus {
+  outline: none;
+}
+
+.search-input:focus:invalid {
+  outline: none;
+}
+
+#search-button {
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: 50px;
+  min-width: 50px;
+  background: transparent;
+}
+
+.hero {
+  height: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: var(--medium-purple);
+  margin-top: 44px;
+}
+
+.hero .textWrap {
+  width: 90%;
+}
+
+.hero h1,
+.hero h2 {
+  font-size: 1.5rem;
+  color: #fff;
+  text-align: center;
+}
+
+.list-section {
+  background: var(--dark-blue);
+  padding: 0.25rem;
+}
+
+.list-section h2 {
+  margin-left: 0.25rem;
+  margin-bottom: 0.25rem;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.detailSection {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 0.25rem;
+  color: #fff;
+}
+
+.list li {
+  height: 200px;
+  width: 50%;
+  padding-right: 0.5rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.5rem;
+  background: var(--light-blue);
+  border: 1px solid var(--dark-blue);
+}
+
+.list .itemLink {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  color: #fff;
+  width: 100%;
+  height: 100%;
   text-decoration: none;
 }
 
-nav > ul a.active {
-  text-decoration: underline;
+.yearWrap h3 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
 }
 
-#border {
-  border-right: 1px solid grey;
-  padding-right: 1rem;
+.loading {
+  text-align: center;
+  margin-top: 50vh;
+}
+
+/* ------------------------------------------------------DETAIL PAGE------------ */
+
+table {
+  width: 100%;
+}
+
+.tbody tr {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  height: 70px;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  text-transform: capitalize;
+}
+
+.tbody tr a {
+  color: yellow;
+  text-decoration: none;
+}
+
+.tbody tr:nth-child(even) {
+  background: var(--dark-blue);
+}
+
+.tbody tr:nth-child(odd) {
+  background: var(--light-blue);
+}
+
+/* ------------------------------------------------------MEDIA LIBRARIES--------- */
+
+@media only screen and (min-width: 768px) {
+  .navbar {
+    padding: 1rem 2rem;
+    height: 74px;
+  }
+
+  .search-wrapper {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    height: 42px;
+  }
+
+  .logo,
+  .iconWrap,
+  .settings {
+    font-size: 1.25rem;
+  }
+
+  #search-button {
+    font-size: 1.25rem;
+  }
+
+  .hero {
+    margin-top: 74px;
+  }
+
+  .list-section {
+    padding: 0.5rem 2rem;
+  }
+
+  .list-section h2 {
+    margin-bottom: 0.5rem;
+  }
+
+  .list li {
+    height: 200px;
+    width: 25%;
+  }
 }

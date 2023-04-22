@@ -1,5 +1,5 @@
 <a name="readme-top"></a>
-  <h3><b>Metrics webapp</b></h3>
+  <h3><b>Annual Income Report</b></h3>
 
 # 📗 Table of Contents
 
@@ -22,9 +22,9 @@
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
-# 📖 [Bookstore] <a name="about-project"></a>
+# 📖 [Annual Income Report] <a name="about-project"></a>
 
-**[Bookstore]** is a project at <a href='https://www.microverse.org/'>Microverse</a> module three. A single page application that displays a list of books. A user can comment on a book add, edit and remove a book.
+**[Annual Income Report]** is a project at <a href='https://www.microverse.org/'>Microverse</a> module three.  It is a single page application that gives annual report on the income statements for the company "Apple Inc." for the past thirty-eight years (1985 till date)
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -33,21 +33,23 @@
   <summary>Client</summary>
   <ul>
     <li><a href="#">Reactjs</a></li>
+    <li><a href="#">Redux</a></li>
   </ul>
 </details>
 
 ### Key Features <a name="key-features"></a>
-- **[ Add book ]**
-- **[ Edit book ]**
-- **[ Delete book ]**
+- **[ Check income statement per year ]**
+- **[ Search income statement by year ]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://deploy-preview-6--musong-bookstore.netlify.app/)
+- [Live Demo Link](https://musong-annual-report.netlify.app/)
 
 ## 🚀 Project Presentation <a name="live-demo"></a>
+
+- [Live Presentation Link](https://www.loom.com/share/1dccca6a0a594c8d8aa7e5b674fc71e3)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -62,7 +64,7 @@ Node version >= 14
 Clone this repository to your desired folder:
 sh
   cd my-folder
- git clone https://github.com/ernestmusong/Bookstore.git
+ git clone https://github.com/ernestmusong/Annual-Income-Report.git
 
  ### Install:
  Run: npm install
@@ -98,7 +100,7 @@ sh
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/ernestmusong/Bookstore/issues).
+Feel free to check the [issues page](https://github.com/ernestmusong/Annual-Income-Report/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -116,6 +118,6 @@ If you like this project, give it a star please!
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 📝 License <a name="license"></a>
- This project is [MIT](./LICENSE.txt) licensed.
+ <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
