@@ -26,6 +26,11 @@ body {
   justify-content: space-between;
   padding: 0.5rem;
   background: var(--dark-blue);
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  height: 44px;
 }
 
 .logo,
@@ -89,6 +94,7 @@ body {
   justify-content: space-around;
   align-items: center;
   background: var(--medium-purple);
+  margin-top: 44px;
 }
 
 .hero .textWrap {
@@ -109,6 +115,7 @@ body {
 
 .list-section h2 {
   margin-left: 0.25rem;
+  margin-bottom: 0.25rem;
   text-transform: uppercase;
   color: #fff;
   font-size: 1rem;
@@ -153,6 +160,11 @@ body {
   text-transform: uppercase;
 }
 
+.loading {
+  text-align: center;
+  margin-top: 50vh;
+}
+
 /* ------------------------------------------------------DETAIL PAGE------------ */
 
 table {
@@ -186,11 +198,41 @@ table {
 /* ------------------------------------------------------MEDIA LIBRARIES--------- */
 
 @media only screen and (min-width: 768px) {
-  .list {
-    grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
+  .navbar {
+    padding: 1rem 2rem;
+    height: 74px;
   }
 
-  .item {
-    width: 325px;
+  .search-wrapper {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    height: 42px;
+  }
+
+  .logo,
+  .iconWrap,
+  .settings {
+    font-size: 1.25rem;
+  }
+
+  #search-button {
+    font-size: 1.25rem;
+  }
+
+  .hero {
+    margin-top: 74px;
+  }
+
+  .list-section {
+    padding: 0.5rem 2rem;
+  }
+
+  .list-section h2 {
+    margin-bottom: 0.5rem;
+  }
+
+  .list li {
+    height: 200px;
+    width: 25%;
   }
 }

@@ -30,7 +30,7 @@ const Statements = () => {
   return (
     <>
       <Hero
-        title1="Income Statement Report for"
+        title1="Annual Income Statement for"
         title2="Apple Inc."
       />
       <section className="list-section">
