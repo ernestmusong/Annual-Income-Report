@@ -27,12 +27,12 @@ const Header = () => {
     <>
       <nav className="navbar" data-testid="header-container">
         <div className="logo" data-testid="logo">
-          <NavLink to="/">
+          <NavLink to="/" style={{ display: 'flex', textDecoration: 'none' }}>
             <div className="iconWrap">
               <FaAngleLeft />
             </div>
+            <h4 style={{ fontSize: '1rem', color: '#fff' }}>AAPL</h4>
           </NavLink>
-          <h4 style={{ fontSize: '1rem', color: '#fff' }}>AAPL</h4>
         </div>
         <form className="search-wrapper" onSubmit={handleSubmit}>
           <label className="search-label" htmlFor="year">

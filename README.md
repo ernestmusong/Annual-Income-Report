@@ -49,6 +49,8 @@
 
 ## 🚀 Project Presentation <a name="live-demo"></a>
 
+- [Live Presentation Link](https://www.loom.com/share/1dccca6a0a594c8d8aa7e5b674fc71e3)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 💻 Getting Started <a name="getting-started"></a>
@@ -62,7 +64,7 @@ Node version >= 14
 Clone this repository to your desired folder:
 sh
   cd my-folder
- git clone https://github.com/ernestmusong/Bookstore.git
+ git clone https://github.com/ernestmusong/Annual-Income-Report.git
 
  ### Install:
  Run: npm install
@@ -98,7 +100,7 @@ sh
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/ernestmusong/Bookstore/issues).
+Feel free to check the [issues page](https://github.com/ernestmusong/Annual-Income-Report/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
