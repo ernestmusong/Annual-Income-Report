@@ -91,7 +91,7 @@ sh
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[I intend to to other operatons like square root]**
+- [ ] **[I intend to add a dropdown list of companies]**
  
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
